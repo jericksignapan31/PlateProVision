@@ -1,0 +1,89 @@
+<mat-sidenav-container>
+  <mat-sidenav class="sidebar" #sidenav="matSidenav">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="../../../assets/sidebar/logo.png" alt="logo" />
+        </span>
+        <div class="text header-text">
+          <span class="name">PlateProVision</span>
+          <span class="title">System</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+
+          <li class="nav-link">
+            <a
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              routerLink="/home/activities"
+            >
+              <i class="bx bx-home-alt icon"></i>
+              <span class="text nav-text">Activities</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+            <a
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              routerLink="/home/guards"
+            >
+              <i class="bx bx-home-alt icon"></i>
+              <span class="text nav-text">Guards</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+            <a
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              routerLink="/home/owners"
+            >
+              <i class="bx bx-home-alt icon"></i>
+              <span class="text nav-text">Owners</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+            <a
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              routerLink="/home/vehicles"
+            >
+              <i class="bx bx-home-alt icon"></i>
+              <span class="text nav-text">Vehicles</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+            <a
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              routerLink="/home/admin"
+            >
+              <i class="bx bx-home-alt icon"></i>
+              <span class="text nav-text">Admins</span>
+            </a>
+          </li>
+
+        
+      
+    
+        </ul>
+      </div>
+    </div>
+    <!-- </nav> -->
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <!-- <router-outlet></router-outlet> -->
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
