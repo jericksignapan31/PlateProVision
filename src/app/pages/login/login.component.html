@@ -3,14 +3,27 @@
     <div class="signin-signup">
       <form action="" class="sign-in-form">
         <h2 class="title">LOGIN</h2>
+
         <div class="input-field">
           <i class="bx bxs-envelope" style="font-size: 2em"></i>
           <input type="text" placeholder="Email" />
         </div>
+
         <div class="input-field">
           <i class="bx bxs-lock-alt" style="font-size: 2em"></i>
-          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Password" matInput [type]="hide ? 'password' : 'text'" />
+           <button
+            mat-icon-button
+            matSuffix
+            (click)="hide = !hide"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide"
+          >
+           
+            <mat-icon >visibility</mat-icon>
+          </button>
         </div>
+
         <input
           type="submit"
           value="Login"
@@ -55,7 +68,6 @@
           </p>
           <button class="btn" id="sign-in-btn">LOGIN</button>
         </div>
-        <img src="assets/login/Itrack4ps.png" alt="" class="image" />
       </div>
 
       <div class="panel right-panel">
@@ -66,8 +78,7 @@
             Sign up
           </button>
         </div>
-        <img src="assets/login/Itrack4ps.png" alt="" class="image" />
-        <img src="assets/login/Itrack4ps.png" alt="Logo" class="logo" />
+        <img src="assets/sidebar/PPV.png" alt="Logo" class="logo" />
       </div>
     </div>
   </div>

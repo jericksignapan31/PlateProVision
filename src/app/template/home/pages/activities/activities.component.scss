@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+ 
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    align-content: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-left: 3rem;
+
+  .search-input {
+    display: flex;
+    margin-bottom: 20px;
+    width: 300px;
+    margin-top: 20px;
+
+    
+
+    input {
+      color: #fff; 
+    }
+  }
+
+  .date-input {
+    width: 300px;
+
+    mat-form-field {
+      width: 100%;
+    }
+
+    input {
+      color: #fff; 
+    }
+
+  
+  }
+
+   .download {
+    background-color: green;
+    color: white; 
+  }
+
+  
+}
+
+.add-user{
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-end;
+
+    button{
+        padding: .5rem 1rem;
+        background-color: #38bcf0;
+        border: none;
+        font-size: medium;
+        color: #fff;
+        font-weight: 600;
+    }
+}

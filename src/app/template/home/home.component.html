@@ -3,7 +3,7 @@
     <header>
       <div class="image-text">
         <span class="image">
-          <img src="../../../assets/sidebar/logo.png" alt="logo" />
+          <img src="../../../assets/sidebar/PPV.png" alt="logo" />
         </span>
         <div class="text header-text">
           <span class="name">PlateProVision</span>
@@ -15,75 +15,79 @@
     <div class="menu-bar">
       <div class="menu">
         <ul class="menu-links">
-
           <li class="nav-link">
             <a
               routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }"
               routerLink="/home/activities"
             >
-              <i class="bx bx-home-alt icon"></i>
+              <button mat-icon-button><mat-icon>apps</mat-icon></button>
               <span class="text nav-text">Activities</span>
             </a>
           </li>
 
-            <li class="nav-link">
+          <li class="nav-link">
             <a
               routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }"
               routerLink="/home/guards"
             >
-              <i class="bx bx-home-alt icon"></i>
+              <button mat-icon-button><mat-icon>security</mat-icon></button>
               <span class="text nav-text">Guards</span>
             </a>
           </li>
 
-            <li class="nav-link">
+          <li class="nav-link">
             <a
               routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }"
               routerLink="/home/owners"
             >
-              <i class="bx bx-home-alt icon"></i>
+              <button mat-icon-button><mat-icon>person</mat-icon></button>
               <span class="text nav-text">Owners</span>
             </a>
           </li>
 
-            <li class="nav-link">
+          <li class="nav-link">
             <a
               routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }"
               routerLink="/home/vehicles"
             >
-              <i class="bx bx-home-alt icon"></i>
+              <button mat-icon-button><mat-icon>directions_car</mat-icon></button>
               <span class="text nav-text">Vehicles</span>
             </a>
           </li>
 
-            <li class="nav-link">
+          <li class="nav-link">
             <a
               routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }"
-              routerLink="/home/admin"
+              routerLink="/home/admins"
             >
-              <i class="bx bx-home-alt icon"></i>
+              <button mat-icon-button><mat-icon>group</mat-icon></button>
               <span class="text nav-text">Admins</span>
             </a>
           </li>
-
-        
-      
-    
         </ul>
+      </div>
+      <div class="bottom">
+        <div class="image-text">
+          <span class="image">
+            <img src="../../../assets/sidebar/profile.png" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="name">Frime Lustre</span>
+            <span class="title">Super Admin</span>
+          </div>
+        </div>
       </div>
     </div>
     <!-- </nav> -->
   </mat-sidenav>
   <mat-sidenav-content>
     <div class="content mat-elevation-z8">
-      <!-- <router-outlet></router-outlet> -->
+      <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-

@@ -1,0 +1,30 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #38bcf0;
+}
+
+mat-card {
+  width: 400px;
+  background-color: white;
+}
+
+.signup-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.form-row {
+  grid-column: span 2;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.full-width {
+  grid-column: span 2;
+}

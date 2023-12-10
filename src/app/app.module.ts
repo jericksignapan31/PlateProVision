@@ -7,6 +7,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { HomeModule } from './template/home/home.module';
 import { MaterialModule } from './material-module';
+import { FormsModule } from '@angular/forms';
+import {AsyncPipe} from '@angular/common';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,11 @@ import { MaterialModule } from './material-module';
     AppRoutingModule,
     HomeModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    AsyncPipe,
+    MatAutocompleteModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
