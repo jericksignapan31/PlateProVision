@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+  margin-left: 3rem;
+}
+
+.search-input {
+  display: flex;
+  margin-bottom: 20px;
+  width: 300px;
+  margin-top: 20px;
+
+  input {
+    color: #030303;
+  }
+}
+
+table {
+  width: 100%;
+
+   button {
+      color: white;
+      font-weight: bold;
+    }
+
+    .inactive {
+      background-color: rgb(160, 112, 112);
+    }
+
+    .active {
+      background-color: green;
+    }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  
+}
+
+.details {
+  margin-left: 1rem; /* Adjust the margin as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.email {
+  font-style: italic;
+}
+
+
+
+

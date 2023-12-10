@@ -1,32 +1,80 @@
 <div class="container">
   <mat-form-field class="search-input">
-    <input matInput placeholder="Search">
+    <input matInput placeholder="Search" />
     <button mat-button matSuffix>
       <mat-icon>search</mat-icon>
     </button>
   </mat-form-field>
 
+  <mat-form-field>
+    <mat-label>Enter a date range</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+      <input matStartDate placeholder="Start date" />
+      <input matEndDate placeholder="End date" />
+    </mat-date-range-input>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+  </mat-form-field>
 
-<mat-form-field>
-  <mat-label>Enter a date range</mat-label>
-  <mat-date-range-input [rangePicker]="picker">
-    <input matStartDate placeholder="Start date">
-    <input matEndDate placeholder="End date">
-  </mat-date-range-input>
-  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-  <mat-date-range-picker #picker></mat-date-range-picker>
-</mat-form-field>
-
-
- <button mat-icon-button>
+  <button mat-icon-button>
     <mat-icon class="download">download</mat-icon>
   </button>
 
-<br>
 
-  </div>
 
-<div class="add-user">
-<button> Add user</button>
+   
 </div>
+
+
+  <div class="table">
   
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource">
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <!-- plateno Column -->
+    <ng-container matColumnDef="plateno">
+      <th mat-header-cell *matHeaderCellDef> PLATE NO. </th>
+      <td mat-cell *matCellDef="let element"> {{element.plateno}} </td>
+    </ng-container>
+
+    <!-- owner Column -->
+    <ng-container matColumnDef="owner">
+      <th mat-header-cell *matHeaderCellDef> OWNER </th>
+      <td mat-cell *matCellDef="let element"> {{element.owner}} </td>
+    </ng-container>
+
+    <!-- date Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef> DATE </th>
+      <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+    </ng-container>
+
+   <!-- timein Column -->
+     <ng-container matColumnDef="timein">
+      <th mat-header-cell *matHeaderCellDef> TIME IN </th>
+      <td mat-cell *matCellDef="let element"> {{element.timein}} </td>
+    </ng-container>
+
+<!-- timeout Column -->
+     <ng-container matColumnDef="timeout">
+      <th mat-header-cell *matHeaderCellDef> TIME OUT </th>
+      <td mat-cell *matCellDef="let element"> {{element.timeout}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[10, 20]"
+                 showFirstLastButtons
+                 aria-label="Select page of periodic elements">
+  </mat-paginator>
+</div>
+  </div>

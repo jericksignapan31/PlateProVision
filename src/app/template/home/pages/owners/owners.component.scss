@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+  margin-left: 3rem;
+}
+
+.search-input {
+  display: flex;
+  margin-bottom: 20px;
+  width: 300px;
+  margin-top: 20px;
+
+  input {
+    color: #030303;
+  }
+}
+
+table {
+  width: 100%;
+}
