@@ -19,62 +19,62 @@
   <button mat-icon-button>
     <mat-icon class="download">download</mat-icon>
   </button>
-
-
-
-   
 </div>
 
+<div class="table">
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+      <!-- Position Column -->
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let element">{{ element.position }}</td>
+      </ng-container>
 
-  <div class="table">
-  
-<div class="mat-elevation-z8">
-  <table mat-table [dataSource]="dataSource">
+      <!-- plateno Column -->
+      <ng-container matColumnDef="plateno">
+        <th mat-header-cell *matHeaderCellDef>PLATE NO.</th>
+        <td mat-cell *matCellDef="let element">{{ element.plateno }}</td>
+      </ng-container>
 
-    <!-- Position Column -->
-    <ng-container matColumnDef="position">
-      <th mat-header-cell *matHeaderCellDef> ID </th>
-      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-    </ng-container>
+      <!-- owner Column -->
+      <ng-container matColumnDef="owner">
+        <th mat-header-cell *matHeaderCellDef>DRIVER</th>
+        <td mat-cell *matCellDef="let element">{{ element.owner }}</td>
+      </ng-container>
 
-    <!-- plateno Column -->
-    <ng-container matColumnDef="plateno">
-      <th mat-header-cell *matHeaderCellDef> PLATE NO. </th>
-      <td mat-cell *matCellDef="let element"> {{element.plateno}} </td>
-    </ng-container>
+      <!-- date Column -->
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef>DATE</th>
+        <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+      </ng-container>
 
-    <!-- owner Column -->
-    <ng-container matColumnDef="owner">
-      <th mat-header-cell *matHeaderCellDef> OWNER </th>
-      <td mat-cell *matCellDef="let element"> {{element.owner}} </td>
-    </ng-container>
+      <!-- timein Column -->
+      <ng-container matColumnDef="timein">
+        <th mat-header-cell *matHeaderCellDef>TIME IN</th>
+        <td mat-cell *matCellDef="let element">{{ element.timein }}</td>
+      </ng-container>
 
-    <!-- date Column -->
-    <ng-container matColumnDef="date">
-      <th mat-header-cell *matHeaderCellDef> DATE </th>
-      <td mat-cell *matCellDef="let element"> {{element.date}} </td>
-    </ng-container>
+      <!-- timeout Column -->
+      <ng-container matColumnDef="timeout">
+        <th mat-header-cell *matHeaderCellDef>TIME OUT</th>
+        <td mat-cell *matCellDef="let element">{{ element.timeout }}</td>
+      </ng-container>
 
-   <!-- timein Column -->
-     <ng-container matColumnDef="timein">
-      <th mat-header-cell *matHeaderCellDef> TIME IN </th>
-      <td mat-cell *matCellDef="let element"> {{element.timein}} </td>
-    </ng-container>
+       <!-- timeout Column -->
+      <ng-container matColumnDef="transaction">
+        <th mat-header-cell *matHeaderCellDef>TRANSACTION</th>
+        <td mat-cell *matCellDef="let element">{{ element.transaction }}</td>
+      </ng-container>
 
-<!-- timeout Column -->
-     <ng-container matColumnDef="timeout">
-      <th mat-header-cell *matHeaderCellDef> TIME OUT </th>
-      <td mat-cell *matCellDef="let element"> {{element.timeout}} </td>
-    </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
 
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
-
-  <mat-paginator [pageSizeOptions]="[10, 20]"
-                 showFirstLastButtons
-                 aria-label="Select page of periodic elements">
-  </mat-paginator>
-</div>
+    <mat-paginator
+      [pageSizeOptions]="[10, 20]"
+      showFirstLastButtons
+      aria-label="Select page of periodic elements"
+    >
+    </mat-paginator>
   </div>
+</div>

@@ -48,6 +48,12 @@
       <td mat-cell *matCellDef="let element"> {{element.carColor}} </td>
     </ng-container>
 
+    <!-- image Column -->
+     <ng-container matColumnDef="attachment">
+      <th mat-header-cell *matHeaderCellDef> Attachment </th>
+      <td mat-cell *matCellDef="let element"> {{element.attachment}} </td>
+    </ng-container>
+
     <!-- ate-registered Column -->
      <ng-container matColumnDef="dateRegistered">
       <th mat-header-cell *matHeaderCellDef> date-registered </th>

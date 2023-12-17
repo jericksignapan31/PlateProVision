@@ -7,23 +7,62 @@
       <form (ngSubmit)="onSubmit()" class="signup-form">
         <div class="form-row">
           <mat-form-field class="form-field">
-            <input matInput placeholder="First Name" [(ngModel)]="firstName" name="firstName" required>
+            <input
+              matInput
+              placeholder="First Name"
+              [(ngModel)]="firstName"
+              name="firstName"
+              required
+            />
           </mat-form-field>
           <mat-form-field class="form-field">
-            <input matInput placeholder="Last Name" [(ngModel)]="lastName" name="lastName" required>
+            <input
+              matInput
+              placeholder="Last Name"
+              [(ngModel)]="lastName"
+              name="lastName"
+              required
+            />
           </mat-form-field>
         </div>
         <mat-form-field class="form-field full-width">
-          <input matInput type="email" placeholder="Email" [(ngModel)]="email" name="email" required>
+          <input
+            matInput
+            type="email"
+            placeholder="Email"
+            [(ngModel)]="email"
+            name="email"
+            required
+          />
         </mat-form-field>
         <mat-form-field class="form-field full-width">
-          <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+          <input
+            matInput
+            type="password"
+            placeholder="Password"
+            [(ngModel)]="password"
+            name="password"
+            required
+          />
         </mat-form-field>
         <mat-form-field class="form-field full-width">
-          <input matInput type="password" placeholder="Confirm Password" [(ngModel)]="confirmPassword" name="confirmPassword" required>
+          <input
+            matInput
+            type="password"
+            placeholder="Confirm Password"
+            [(ngModel)]="confirmPassword"
+            name="confirmPassword"
+            required
+          />
         </mat-form-field>
-        <button mat-raised-button color="primary" type="submit"
-        routerLink="/login">Sign Up</button>
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          routerLink="/login"
+        >
+          Sign Up
+        </button>
       </form>
     </mat-card-content>
   </mat-card>

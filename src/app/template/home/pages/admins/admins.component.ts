@@ -15,7 +15,7 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {img: '/assets/sidebar/profile.png', email: 'admin1@example.com', name: 'John Doe', title: 'Web Developer', status: 'Active', position: 'Senior Developer', action: 'Edit'},
+  {img: '/assets/sidebar/profile.png', email: 'admin1@example.com', name: 'John Doe', title: 'HR', status: 'Active', position: 'Senior Developer', action: 'Edit'},
   {img: '/assets/sidebar/profile.png', email: 'admin2@example.com', name: 'Jane Smith', title: 'UI/UX Designer', status: 'Active', position: 'Lead Designer', action: 'Edit'},
   {img: '/assets/sidebar/profile.png', email: 'admin3@example.com', name: 'Michael Johnson', title: 'Database Administrator', status: 'Active', position: 'Database Manager', action: 'Edit'},
   {img: '/assets/sidebar/profile.png', email: 'admin4@example.com', name: 'Olivia Davis', title: 'System Analyst', status: 'Active', position: 'Systems Analyst', action: 'Edit'},
